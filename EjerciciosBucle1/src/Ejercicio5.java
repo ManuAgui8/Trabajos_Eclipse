@@ -15,7 +15,7 @@ public class Ejercicio5 {
 	public static void main(String[] args) {
 		
 		int num;
-		int factorial = 0;
+		int factorial = 1;
 		Scanner teclado = new Scanner(System.in);
 		
 		//TODO: Forzar  al usuario a introducir un número positivo
@@ -28,11 +28,11 @@ public class Ejercicio5 {
 		//TODO: Calcular el factorial del número do-while, while, for
 		
 		
-		for (int i = 0; i <= num; i++) {
-			factorial = num * (num-i);
+		for (int i = 1; i <= num; i++) {
+			factorial = factorial*i ;
 		}
 		
-		System.out.println("El numero factorial de "+ num +" = "+ factorial);
+		System.out.println("El numero "+ num +"! = "+ factorial);
 		
 		
 		
