@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/**
+ * Realiza un programa que lea 10 números no nulos y luego muestre un mensaje
+de si ha leído algún número negativo o no.
+ */
+
+public class Ejercicio6 {
+
+	public static void main(String[] args) {
+		
+		int num;
+		int aux = 0;
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Dime 10 números no nulos y te digo si hay alguno negativo");
+		
+		for (int i = 1; i <= 10; i++) {
+			num = teclado.nextInt();
+			if (num < 0) {
+				aux = aux + 1;
+			}
+		}
+		System.out.println("Se han contado "+ aux +" negativos");
+	}
+	
+}
