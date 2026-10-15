@@ -1,0 +1,9 @@
+
+public class HolaMundo {
+	
+	public static void main (String[] args) {
+		// todo lo de aqui ya será nuestro código
+		
+		System.out.println("Hola Mundo!");
+	}
+}
