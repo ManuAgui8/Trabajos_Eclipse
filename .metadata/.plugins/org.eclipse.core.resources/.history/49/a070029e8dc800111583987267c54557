@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/**
+ * Realiza un programa donde el usuario "piensa" un número del 1 al 100 y el
+ordenador intenta adivinarlo. Es decir, el ordenador irá proponiendo números
+una y otra vez hasta adivinarlo (el usuario deberá indicarle al ordenador si es
+mayor, menor o igual al número que ha pensado).
+ */
+
+public class Ejercicio13 {
+
+	public static void main(String[] args) {
+		
+		int respuesta_num;
+		int solucion = 0;
+		int adivino = 50;
+		int min = 1;
+		int max = 100;
+		boolean mayorque = false;
+		boolean menorque = false;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Pinesate un número y lo intento adivinar");
+
+		do {
+			System.out.println("El numero es mayor o igual a "+ adivino +", (1) = si, (-1) = no, (0) = es ese número");
+		} while (adivino != solucion);
+
+	}
+}

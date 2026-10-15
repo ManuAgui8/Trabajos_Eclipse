@@ -11,6 +11,26 @@ public class Ejercicio13 {
 
 	public static void main(String[] args) {
 		
+		int respuesta_num;
+		int solucion = 0;
+		double adivino = 50;
+		double min = 1;
+		double max = 100;
+
 		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Pinesate un número y lo intento adivinar");
+
+		do {
+			System.out.println("El numero es mayor a "+ adivino +"?, (1) = si, (-1) = no, (0) = es ese número");
+			respuesta_num = teclado.nextInt();
+			if (respuesta_num == 1) {
+				min = 50;
+				adivino = (max + min) / 2;
+			}
+			
+		} while (adivino != solucion);
+
+		teclado.close();
 	}
 }
