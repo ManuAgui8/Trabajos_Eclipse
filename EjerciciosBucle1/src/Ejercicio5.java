@@ -33,7 +33,7 @@ public class Ejercicio5 {
 		}
 		
 		System.out.println("El numero factorial de "+ num +" = "+ factorial);
-		
+		System.out.println("ni idea de como hacer esto jaja(prueba)");
 		
 		
 		
