@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
     <entry loc="/snap/eclipse/150/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_25.0.4.v20260826-0822/jre" stamp="1789718199000"/>
+    <entry loc="C:\Program Files\Java\jre1.8.0_451" stamp="1752062940145"/>
     <entry loc="/usr/lib/jvm/java-21-openjdk-amd64" stamp="1782304247937"/>
+    <entry loc="C:\Users\Manu\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822" stamp="1792172509660"/>
+    <entry loc="C:\Users\Manu\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822\jre" stamp="1792172509657"/>
     <entry loc="/snap/eclipse/150/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_25.0.4.v20260826-0822" stamp="1789718199000"/>
 </dirs>

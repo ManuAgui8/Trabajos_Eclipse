@@ -22,6 +22,8 @@ public class Ejercicio1 {
 		
 		System.out.println("La cantidad de multiplos de 3 hasta "+ num +" = "+aux);
 		
+		System.out.println("Esto es una prueba");
+		
 		teclado.close();
 	}
 	
