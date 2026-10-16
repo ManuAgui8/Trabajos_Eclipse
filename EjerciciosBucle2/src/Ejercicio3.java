@@ -14,7 +14,7 @@ public class Ejercicio3 {
 		
 		int num2 = 0;
 		int aux1 = 0;
-		int aux2 = 0;
+		int aux2 = -1;
 		int num1 = 0;
 		Scanner teclado = new Scanner(System.in);
 		
@@ -26,13 +26,15 @@ public class Ejercicio3 {
 			
 			if (num1 <= num2) {
 				aux1 = aux1 + 1;
-				num2 = num1;
+				num1 = num2;
 			} else {
 				System.out.println("fallo, es menor");
-				aux2 = aux2 + 1;
+				num1 = num2;
+				aux2 += 1;
 				aux1 = aux1 + 1;
 			}
 		} while (num2 != 0);
+		
 		
 		System.out.println("Total de números introducidos = "+ aux1);
 		System.out.println("Total de fallos = "+ aux2);
