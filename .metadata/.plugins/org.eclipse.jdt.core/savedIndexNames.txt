@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+/home/daw/Trabajos_Eclipse/.metadata/.plugins/org.eclipse.jdt.core
-3919092853.index
 1865797976.index
 3131579585.index
 2864362121.index

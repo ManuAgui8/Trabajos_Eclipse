@@ -25,8 +25,8 @@ public class HolaMundo {
 		
 		System.out.println("Dime tu numero");
 		
-		Scanner reclado = new Scanner(System.in);
 		numero = teclado.nextInt();
+		numero = numero + 1;
 		
 		
 		teclado.close();
