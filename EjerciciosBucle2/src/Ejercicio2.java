@@ -10,20 +10,22 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		
 		int num = 0;
-		int primo = 0;
+		boolean es_primo = false;
 		Scanner teclado = new Scanner(System.in);
 		
 		System.out.println("Dime un número y te digo si es primo o no");
 		num = teclado.nextInt();
 		
-		for (int i = 1; i <= Math.sqrt(num); i++) {
-			primo = num / i;
+		for (int i = 2; i <= Math.sqrt(num); i++) {
+			if (num % i == 0) {
+				es_primo = true;
+			}
 		}
 		
-		if (primo % 1 == primo) {
-			System.out.println("El numero no es primo");
+		if (!es_primo) {
+			System.out.println("El número es primo");
 		} else {
-			System.out.println("El numero es primo");
+			System.out.println("El número no es primo");
 		}
 		
 		
