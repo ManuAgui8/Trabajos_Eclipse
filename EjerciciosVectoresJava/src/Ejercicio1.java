@@ -14,6 +14,8 @@ public class Ejercicio1 {
 		Scanner teclado = new Scanner(System.in);
 		int v[] = new int [10];
 		
+		
+		System.out.println("Dime 10 números que se guardarán en un vector que te mostraré cuando acabes");
 		for (int i = 0; i < v.length; i++) {
 			num = teclado.nextInt();
 			v[i] = num;
