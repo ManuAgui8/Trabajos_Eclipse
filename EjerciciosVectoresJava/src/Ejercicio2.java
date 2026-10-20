@@ -21,10 +21,12 @@ public class Ejercicio2 {
 			v[i] = num;
 		}
 		
-		for (int i = 0; i <v.length; i++) {
+		for (int i = 0; i < v.length; i++) {
 			if (v[i] > max) {
 				max = v[i];
-			} else if (v[i] < min) {
+			} 
+			
+			if (v[i] < min) {
 				min = v[i];
 			}
 			
