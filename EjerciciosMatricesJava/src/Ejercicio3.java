@@ -14,6 +14,9 @@ public class Ejercicio3 {
 		int m;
 		int matriz[][];
 		int cont = 1;
+		int min = 0;
+		int max = 0;
+		int ig = 0;
 		Scanner teclado = new Scanner(System.in);
 		
 		System.out.println("Dime el número de filas de la matriz");
@@ -32,7 +35,11 @@ public class Ejercicio3 {
 			for (int i = 0; i < matriz.length; i++){
 				for (int j = 0;j < matriz[i].length-1; j++){
 					if (matriz[i][j] < 0) {
-						System.out.println();
+						min = min + 1;
+					} if (matriz[i][j] == 0) {
+						ig = ig + 1;
+					} else {
+						max = max + 1;
 					}
 				}
 				
@@ -42,7 +49,10 @@ public class Ejercicio3 {
 			System.out.println("Para los valores de la matriz introduce numeros positivos");
 		}
 		
-		
+		System.out.println("Los valores positivos de la matriz son " + max);
+		System.out.println("Los valores negativos de la matriz son " + min);
+		System.out.println("Los valores iguales a 0 de la matriz son " + ig);
+
 		
 		
 		
