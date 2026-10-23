@@ -25,7 +25,7 @@ public class Ejercicio9 {
 		
 		for (int i = 0; i < v.length; i++) {
 			if (n == v[i]) {
-				System.out.print(i + 1 +" ");
+				System.out.print(i + 1 +". ");
 			}
 		}
 		
