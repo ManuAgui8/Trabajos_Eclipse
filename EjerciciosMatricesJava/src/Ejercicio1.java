@@ -21,7 +21,7 @@ public class Ejercicio1 {
 				System.out.print(m[i][j]+ ", ");
 			}
 			
-			System.out.println(m[i][m.length-1]+ "]");
+			System.out.println(m[i][m[i].length-1]+ "]");
 		}
 	}
 }

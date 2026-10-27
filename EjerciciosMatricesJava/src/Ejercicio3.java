@@ -26,24 +26,32 @@ public class Ejercicio3 {
 		
 		if (n>0 && m>0) {
 			matriz = new int [n][m];
-				for (int j = 0; j< matriz.length; j++) {
-					System.out.println("Indroduce los valores de la fila "+ cont++);
-					for (int k = 0; k < matriz[j].length; k++) {
-						matriz[j][k] = teclado.nextInt();
-					}
-				}
-			for (int i = 0; i < matriz.length; i++){
-				for (int j = 0;j < matriz[i].length-1; j++){
-					if (matriz[i][j] < 0) {
-						min = min + 1;
-					} if (matriz[i][j] == 0) {
-						ig = ig + 1;
-					} else {
-						max = max + 1;
-					}
+			for (int j = 0; j< matriz.length; j++) {
+				System.out.println("Indroduce los valores de la fila "+ cont++);
+				for (int k = 0; k < matriz[j].length; k++) {
+					matriz[j][k] = teclado.nextInt();
 				}
 				
-				System.out.println(matriz[i][matriz.length-1]+ "]");
+			}
+				
+			for (int i = 0; i < matriz.length; i++){
+				System.out.print("[");
+				for (int j = 0;j < matriz[i].length-1; j++){
+					System.out.print(matriz[i][j]+ ", ");
+				}
+				System.out.println(matriz[i][matriz[i].length-1]+ "]");
+			}
+				
+			for (int i = 0; i < matriz.length; i++){
+				for (int j = 0;j < matriz[i].length; j++){
+				if (matriz[i][j] < 0) {
+					min = min + 1;
+				} if (matriz[i][j] > 0) {
+					max = max + 1;
+					} if (matriz[i][j] == 0){
+						ig = ig + 1;
+					}
+				}
 			}
 		} else {
 			System.out.println("Para los valores de la matriz introduce numeros positivos");
@@ -53,10 +61,6 @@ public class Ejercicio3 {
 		System.out.println("Los valores negativos de la matriz son " + min);
 		System.out.println("Los valores iguales a 0 de la matriz son " + ig);
 
-		
-		
-		
-		
 		teclado.close();
 		
 	}

@@ -1,3 +1,8 @@
+/**
+ * Crea un programa que cree una matriz de 10x10 e introduzca los valores
+	de las tablas de multiplicar del 1 al 10 (cada tabla en una fila). Luego mostrará la
+	matriz por pantalla.
+ */
 
 public class Ejercicio2 {
 	public static void main(String[] args) {
@@ -17,7 +22,7 @@ public class Ejercicio2 {
 				System.out.print(m[i][j]+ ", ");
 			}
 			
-			System.out.println(m[i][m.length-1]+ "]");
+			System.out.println(m[i][m[i].length-1]+ "]");
 		}
 	}
 }
