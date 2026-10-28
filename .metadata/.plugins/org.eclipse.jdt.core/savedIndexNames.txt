@@ -1,9 +1,10 @@
-INDEX VERSION 1.134+C:\Users\Manu\Desktop\1º DAW Manuel Aguilar\Trabajos_Eclipse\.metadata\.plugins\org.eclipse.jdt.core
-3908796574.index
-3023889871.index
-3251249088.index
-2374404406.index
+INDEX VERSION 1.134+/home/daw/Trabajos_Eclipse/.metadata/.plugins/org.eclipse.jdt.core
+3135643159.index
+3297005334.index
+2910659678.index
 1865797976.index
-344971404.index
-3368133209.index
-3440784044.index
+3094939776.index
+3131579585.index
+597773691.index
+2864362121.index
+3702792539.index
