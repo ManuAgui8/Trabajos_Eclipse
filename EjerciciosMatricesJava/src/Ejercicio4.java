@@ -9,37 +9,31 @@ import java.util.Scanner;
 
 public class Ejercicio4 {
 	public static void main(String[] args) {
-		
-		final int NUM_ALUMNOS=4, NUM_NOTAS=5;
-		double m[][] = new double [NUM_ALUMNOS][NUM_NOTAS];
-		double mayor=0, menor=10,suma=0, media;
-		
-		Scanner teclado = new Scanner(System.in);
-		
-		for (int i = 0; i < m.length; i++) {
-			//El elemento m[i] es el vector que representa al alumno i+1
-			mayor = m[i][0];
-			menor = m[i][0];
-			suma = 0;
-			for (int j = 0; j < m[i].length; j++) {
-				//el valor i representa al alumno i+1
-				//el valor j representa la nota (j+1)º del alumno
-				if (m[i][j] > mayor) {
-					mayor = m[i][j];
-				}
-				if (m[i][j] < menor) {
-					menor = m[i][j];
-				}
-				//ya he procesado notas[i], que es el alumno i+1
+			final int NUM_ALUMNOS=4, NUM_NOTAS=5;
+			double mayor,menor,suma,media;
+			Scanner teclado = new Scanner(System.in);
 				
-				media = suma / m[i].length;
-				System.out.println("Máximo alumno "+ (i+1) + ": " + mayor);
-				System.out.println("Mínimo alumno "+ (i+1) + ": " + menor);
-				System.out.println("Media alumno "+ (i+1) + ": " + media);
+			double[][] notas = new double[NUM_ALUMNOS][NUM_NOTAS];
+				
+			for (int i = 0; i < notas.length; i++) {
+				mayor = notas[i][0];
+				menor = notas[i][0];
+				suma = 0;
+				for (int j = 1; j < notas[i].length; j++) {
+					if(notas[i][j] > mayor) {
+						mayor = notas[i][j];
+					}
+					if(notas[i][j] < menor) {
+						menor = notas[i][j];
+					} 
+					suma += notas[i][j];
+				media = suma / notas[i].length;
+				System.out.println("Máximo alumno " + (i+1) + ": " + mayor);
+				System.out.println("Mínimo alumno " + (i+1) + ": " + menor);
+				System.out.println("Media alumno " + (i+1) + ": " + media);
+				}
+				
 			}
-			
-		}
-		
-		teclado.close();
+		teclado.close();	
 	}
 }
