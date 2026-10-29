@@ -15,7 +15,27 @@ public class Ejercicio12 {
 		
 		Scanner teclado = new Scanner(System.in);
 		
+		int[] v = new int[10];
+		String respuesta;
 		
+		boolean a = false, b = false, c = false;
+		
+		do {
+			System.out.println("Menu array");
+			System.out.println("-----------------");
+			System.out.println("a. Mostrar valores.");
+			System.out.println("b. Introducir valor");
+			System.out.println("c. Salir");
+			respuesta = teclado.nextLine();
+			
+			if (respuesta == "c") {
+				c = true;
+			}
+			
+			if (respuesta == "b") {
+				System.out.println("Hola");
+			}
+		} while (c);
 		
 		
 		
