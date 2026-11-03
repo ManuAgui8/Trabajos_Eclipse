@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.Scanner;
+
 /**
  *Crea un programa que cree un array de 10 enteros y luego muestre el siguiente menú con
 	distintas opciones:
@@ -17,8 +19,8 @@ public class Ejercicio12 {
 		
 		int[] v = new int[10];
 		String respuesta;
+		int valor_vector = 0, posicion_vector = 0;
 		
-		boolean a = false, b = false, c = false;
 		
 		do {
 			System.out.println("Menu array");
@@ -26,16 +28,25 @@ public class Ejercicio12 {
 			System.out.println("a. Mostrar valores.");
 			System.out.println("b. Introducir valor");
 			System.out.println("c. Salir");
+			System.out.println("------------------");
 			respuesta = teclado.nextLine();
 			
-			if (respuesta == "c") {
-				c = true;
+			if (respuesta.equalsIgnoreCase("a")) {
+				System.out.println("------------------");
+				System.out.println(Arrays.toString(v));
+				System.out.println("------------------");
 			}
 			
-			if (respuesta == "b") {
-				System.out.println("Hola");
+			if (respuesta.equalsIgnoreCase("b")) {
+				System.out.println("-------------------------------------------------");
+				System.out.println("Dime el valor que quieras introducir al vector");
+				valor_vector = teclado.nextInt();
+				System.out.println("Dime la posición del vector en la que quieres introducir el valor");
+				posicion_vector = teclado.nextInt();
+				v[posicion_vector - 1] = valor_vector;
 			}
-		} while (c);
+			
+		} while (!respuesta.equalsIgnoreCase("c"));
 		
 		
 		
