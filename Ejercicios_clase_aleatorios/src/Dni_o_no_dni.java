@@ -38,7 +38,6 @@ public class Dni_o_no_dni {
 							esValido = true;
 						}
 					}
-					
 				}
 			}	
 		}
@@ -48,11 +47,6 @@ public class Dni_o_no_dni {
 		} else {
 			System.out.println("DNI no válido");
 		}
-		
-		
-		
-		
-		
 		
 		
 		teclado.close();
