@@ -19,7 +19,7 @@ public class Dni_o_no_dni {
 		final String LETRAS_DNI = "TRWAGMYFPDXBNJZSQVHLCKE";
 		String dni;
 		Scanner teclado = new Scanner(System.in);
-		boolean esValido = false;
+		boolean esValido = false, esValido2 = false;
 		int posicion = 0;
 		
 		System.out.println("Introduce DNI");
@@ -32,10 +32,11 @@ public class Dni_o_no_dni {
 			int valorAscii = (int) dni.charAt(8);  //cambia el ultimo valor del string en un numero de la tabla ascii
 			if ((valorAscii >= 65) && (valorAscii <= 90)) {  //compara valores de la tabla ascii para que este dentro del rango
 				for (int i = 0; i < dni.length() - 1; i++) {
-					if(dni.charAt(i) > 9 || dni.charAt(i) < 0) {  //comprueba que los primeros 8 caracteres sean enteros
+					if(dni.charAt(i) > 9 || dni.charAt(i) < 0) {   //comprueba que los primeros 8 caracteres sean enteros
+						esValido = true;
 						posicion = Integer.parseInt(dni.substring(0,8)) % 23;
-						if (dni.charAt(dni.length() - 1) == LETRAS_DNI.charAt(posicion)) { //comprueba la regla del DNI
-							esValido = true;
+						if (dni.charAt(dni.length() - 1) == LETRAS_DNI.charAt(posicion)) {    //comprueba la regla del DNI
+							esValido2 = true;
 						}
 					}
 					
@@ -43,7 +44,7 @@ public class Dni_o_no_dni {
 			}	
 		}
 	
-		if (esValido) {
+		if (esValido && esValido2) {
 			System.out.println("DNI válido");
 		} else {
 			System.out.println("DNI no válido");
