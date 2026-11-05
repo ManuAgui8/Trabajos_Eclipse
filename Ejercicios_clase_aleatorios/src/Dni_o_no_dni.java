@@ -20,26 +20,33 @@ public class Dni_o_no_dni {
 		String dni;
 		Scanner teclado = new Scanner(System.in);
 		boolean esValido = false;
+		int posicion = 0;
 		
-		System.out.println("Introduce dni");
+		System.out.println("Introduce DNI");
 		dni = teclado.nextLine().toUpperCase();
 		//TODO: Determinar si el dni es válido
 		
 		
 				
-		if (dni.length() == 9) {
-			int valorAscii = (int) dni.charAt(8);
-			if ((valorAscii >= 65) && (valorAscii <= 90)) {
-				esValido = true;
+		if (dni.length() == 9) { //comprueba si la longitud del DNI es 9
+			int valorAscii = (int) dni.charAt(8);  //cambia el ultimo valor del string en un numero de la tabla ascii
+			if ((valorAscii >= 65) && (valorAscii <= 90)) {  //compara valores de la tabla ascii para que este dentro del rango
+				for (int i = 0; i < dni.length() - 1; i++) {
+					if(dni.charAt(i) > 9 || dni.charAt(i) < 0) {  //comprueba que los primeros 8 caracteres sean enteros
+						posicion = Integer.parseInt(dni.substring(0,8)) % 23;
+						if (dni.charAt(dni.length() - 1) == LETRAS_DNI.charAt(posicion)) { //comprueba la regla del DNI
+							esValido = true;
+						}
+					}
+					
+				}
 			}	
-			
-			
 		}
 	
 		if (esValido) {
-			System.out.println("es válido");
+			System.out.println("DNI válido");
 		} else {
-			System.out.println("No es válido");
+			System.out.println("DNI no válido");
 		}
 		
 		
