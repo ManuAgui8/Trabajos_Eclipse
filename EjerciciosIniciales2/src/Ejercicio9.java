@@ -14,17 +14,33 @@ import java.util.Scanner;
 
 public class Ejercicio9 {
 	public static void main(String[] args) {
-		int salario_bruto = 0;
+		double salario_bruto, salario_neto, tarifa, dineroImpuestos;
+		int horas_semanales;
 		String trabajador;
-		int horas_semanales = 0;
-		int salario_neto = 0;
 		Scanner teclado = new Scanner(System.in);
 		
 		System.out.println("Dime quién es el trabajador");
 		trabajador = teclado.nextLine();
 		System.out.println("Dime las horas que trabaja a la semana");
 		horas_semanales = teclado.nextInt();
-		System.out.println("Por último, dime su salario bruto y te diré el neto despúes de todas las tasas");
+		System.out.println("Por último, dime su salario bruto semanal y te diré el neto despúes de todas las tasas");
 		salario_bruto = teclado.nextInt();
+		
+		tarifa = salario_bruto / horas_semanales;
+		
+		System.out.println("La tarifa es de "+ tarifa +"€");
+		
+		salario_neto = (35 * tarifa) + ((horas_semanales - 35) * (1.5 + tarifa));
+		
+		dineroImpuestos = ((300 * 25) / 100) + (((salario_bruto - 900) * 45) / 100);
+		
+		System.out.println("Tu dinero en impuestos son: "+ dineroImpuestos +"€");
+		
+		salario_neto = salario_neto - dineroImpuestos;
+		
+		System.out.println("El sueldo neto del trabajador "+ trabajador +" es de "+ salario_neto +"€");
+		
+		
+		teclado.close();
 	}
 }
