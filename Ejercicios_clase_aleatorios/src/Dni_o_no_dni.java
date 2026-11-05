@@ -22,11 +22,10 @@ public class Dni_o_no_dni {
 		boolean esValido = false;
 		int posicion = 0;
 		
-		System.out.println("Introduce DNI");
 		dni = teclado.nextLine().toUpperCase();
 		//TODO: Determinar si el dni es válido
 		
-		
+		System.out.println(73229615 % 23);
 				
 		if (dni.length() == 9) { //comprueba si la longitud del DNI es 9
 			int valorAscii = (int) dni.charAt(8);  //cambia el ultimo valor del string en un numero de la tabla ascii
