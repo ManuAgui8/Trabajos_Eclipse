@@ -12,7 +12,7 @@ public class Ejercicio10 {
 		System.out.println("Dime un número real y te digo si es válido o no");
 		numReal = teclado.nextLine();
 		
-		System.out.println("Este número real es: "+ numReal.matches("-*[0-9]*\\.*[0-9]+"));
+		System.out.println("Este número real es: "+ numReal.matches("-*[0-9]*\\.[0-9]*"));
 		
 		teclado.close();
 	}

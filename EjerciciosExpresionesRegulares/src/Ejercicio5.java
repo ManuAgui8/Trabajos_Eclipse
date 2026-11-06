@@ -10,7 +10,7 @@ public class Ejercicio5 {
 		System.out.println("Dime una ip aleatoria y te digo es es valida o no (true o false)");
 		String ip = teclado.nextLine();
 			
-		System.out.println("La ip es: "+ ip.matches("[0-255]*\\.[0-255]*\\.[0-255]*\\.[0-255]*"));
+		System.out.println("La ip es: "+ ip.matches("([0-9]{1,3}\\.){3}[0-9]{1,3}"));
 		
 		
 		teclado.close();
