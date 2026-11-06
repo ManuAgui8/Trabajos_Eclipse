@@ -12,7 +12,7 @@ public class Ejercicio7 {
 		System.out.println("Dime un numero binario y te digo si es válido o no");
 		binario = teclado.nextLine();
 		
-		System.out.println("Este número binario es: "+ binario.matches("-*[01]+"));
+		System.out.println("Este número binario es: "+ binario.matches("-{0,1}[01]+"));
 		
 		teclado.close();
 	}
