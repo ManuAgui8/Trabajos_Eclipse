@@ -20,19 +20,19 @@ public class Ejercicio9 {
 		System.out.println("Dime el último número");
 		num3 = teclado.nextInt();
 		
-		System.out.println(maximo(num1, num2));
+		
+		System.out.println("El mayor de estos tres número es: "+ maximo(maximo(num1, num2), num3));
+		
 		
 		teclado.close();
 	}
 	
 	public static int maximo (int a, int b) {
-		int mayor;
 		
 		if (a > b) {
-			mayor = a;
-			return mayor;
+			return a;
 		}
 		
-		
+		return b;
 	}
 }
