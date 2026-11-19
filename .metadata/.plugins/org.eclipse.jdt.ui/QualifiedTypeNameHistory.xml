@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.nio.channels.AsynchronousSocketChannel"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.gc.parallel.PSYoungGen"/>
 </qualifiedTypeNameHistroy>

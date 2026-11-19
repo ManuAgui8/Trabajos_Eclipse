@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Piramides con strings
+ * Figuras con strings
  */
 
 public class ejPiramides {
@@ -46,6 +46,45 @@ public class ejPiramides {
 			
 			System.out.println();
 		}
+		
+		filas = 5;
+		
+		System.out.println("=====================");
+		System.out.println("Un cuadrado hueco:");
+		System.out.println("=====================");
+		
+		for(int i = 0; i <= filas; i++) {
+			for(int j = 0; j <= filas; j ++) {
+				if (i == 0 || i == filas - 1 || j == 0 || j == filas - 1) {
+					System.out.println("*");
+				} else {
+					System.out.print(" ");
+				}
+				
+						
+			}
+		}
+		
+		System.out.println("=====================");
+		System.out.println("Un cuadrado hueco:");
+		System.out.println("=====================");
+		
+		
+		int n = 5;
+        String resultado2 = "";
+
+        for (int fila = 0; fila < n; fila++) {
+            for (int col = 0; col < n; col++) {
+                if (fila == 0 || fila == n - 1 || col == 0 || col == n - 1) {
+                    resultado2 += "* ";
+                } else {
+                    resultado2 += "  ";
+                }
+            }
+            resultado2 += "\n";
+        }
+
+        System.out.println(resultado2);
 		
 		teclado.close();
 	}
