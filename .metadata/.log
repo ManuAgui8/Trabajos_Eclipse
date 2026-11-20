@@ -9448,3 +9448,16 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/EjerciciosExp
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
 !SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2026-11-19 19:01:14.184
 !MESSAGE Cannot determine URI for '/EjerciciosExpresionesRegulares/src/Ejercicio7.java'.
+!SESSION 2026-11-20 09:18:27.491 -----------------------------------------------
+eclipse.buildId=4.41.0.20260903-0719
+java.version=25.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2026-11-20 09:18:36.892
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-11-20 09:18:40.762
+!MESSAGE Logback config file: /home/daw/Trabajos_Eclipse/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.201.20260831-2044.xml
