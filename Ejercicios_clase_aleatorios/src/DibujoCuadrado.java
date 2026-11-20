@@ -17,23 +17,18 @@ public class DibujoCuadrado {
         //         con '*' en los bordes y espacios en el interior.
         //         Comprueba también los casos de una sola fila o columna.
         
-        String caracter = "*";
         
-        if (filas > 0 && columnas > 0) {
-        	for (int i = 0; i <= filas; i++) {
-        		for (int j = 0; j <= columnas; j++) {
+        	for (int i = 0; i < filas; i++) {
+        		for (int j = 0; j < columnas; j++) {
         			if (i == 0 || i == filas - 1 || j == 0 || j == columnas - 1) {
-        				System.out.println(caracter);
-
+        				System.out.print("* ");
         			} else {
         				System.out.print(" ");
         			}
         		}
+    			System.out.println();
         	}
-        } else {
-        	System.out.println("Error, no puedes introducir filas o columnas negativas, introducelas correctamente");
-        	System.exit(0);
-        }
+      
         
         teclado.close();
 	}
