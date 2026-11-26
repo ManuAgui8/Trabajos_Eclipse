@@ -7,10 +7,7 @@ public class Ejercicio10 {
 		
 		if ((a <= 30 && a > 0) && (b <= 12 && b > 0) && c > 0) {
 			fechacorrecta = true;
-		} else {
-			fechacorrecta = false;
-		}
-		
+		} 
 		return fechacorrecta;
 	}
 	

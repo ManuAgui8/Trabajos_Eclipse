@@ -6,8 +6,6 @@ public class Ejercicio2 {
 		
 		if (a >= 18) {
 			mayor = true;
-		} else {
-			mayor = false;
 		}
 		return mayor;
 	}
