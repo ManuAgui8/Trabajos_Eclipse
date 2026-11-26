@@ -19,7 +19,7 @@ public class EjercicioMaximo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		double a, b, c, maximo, maximoDe3;
+		double a, b, c ;
 		Scanner teclado = new Scanner(System.in);
 		
 		//TODO: Pedir valores a, b y c
@@ -31,16 +31,14 @@ public class EjercicioMaximo {
 		
 		//TODO: Asignar a maximo el valor maximo entre a y b
 		
-		maximo = maximo(a, b);
-		System.out.println("El máximo valor entre a y b = "+ maximo);
+		System.out.println("El máximo valor entre a y b = "+ maximo(a, b));
 		
 		//TODO 2: Mostrar el valor maximo de a, b y c (utilizando la funcion creada)
 		
 		System.out.println("Dime un tercer valor c cualquiera y te digo el maximo de los 3 valores");
 		c = teclado.nextDouble();
 		
-		maximoDe3 = maximo(a, b, c);
-		System.out.println("El valor máximo entre a, b y c = "+ maximoDe3);
+		System.out.println("El valor máximo entre a, b y c = "+ maximo(a, b, c));
 		
 		teclado.close();
 	}	
