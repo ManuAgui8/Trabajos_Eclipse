@@ -3,17 +3,14 @@ public class EjercicioMaximo {
 	
 	
 	//TODO: Generar funcion que calcula el maximo entre dos numeros reales
-	//public ...
 	public static double maximo (double a, double b) {
 		if (a > b) {
 			return a;
 		}
-		
 		return b;
 	}
 	
 	//TODO 2: Generar funcion que calcule el maximo entre 3 numeros reales
-	
 	public static double maximode3 (double a, double b, double c) {
 		if (a > b) {
 			if (a > c) {
@@ -24,16 +21,12 @@ public class EjercicioMaximo {
 				return b;
 			}
 		}
-		
 		return c;
-		
-		
 	}
 	/**
 	 * Declaracion metodo principal
 	 * @param args
 	 */
-	
 	public static void main(String[] args) {
 		double a, b, c, maximo, maximoDe3;
 		Scanner teclado = new Scanner(System.in);
@@ -42,15 +35,12 @@ public class EjercicioMaximo {
 		
 		System.out.println("Dime un valor a cualquiera");
 		a = teclado.nextDouble();
-		
 		System.out.println("Dime otro valor b cualquiera");
 		b = teclado.nextDouble();
 		
 		//TODO: Asignar a maximo el valor maximo entre a y b
-		// maximo = ...
 		
 		maximo = maximo(a, b);
-		
 		System.out.println("El máximo valor entre a y b = "+ maximo);
 		
 		//TODO 2: Mostrar el valor maximo de a, b y c (utilizando la funcion creada)
@@ -59,7 +49,6 @@ public class EjercicioMaximo {
 		c = teclado.nextDouble();
 		
 		maximoDe3 = maximode3(a, b, c);
-		
 		System.out.println("El valor máximo entre a, b y c = "+ maximoDe3);
 		
 		teclado.close();
